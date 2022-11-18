@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+/* font-family: 'Fraunces', serif; */
+/* font-family: 'Barlow', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+h2 {
+  font-family: 'Fraunces', serif;
+  color: hsl(212, 27%, 19%);
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+strong {
+  font-family: 'Fraunces', serif;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+  font-size: 18px;
+  display: block;
+  margin: .5rem;
+}
+
+.profession {
+  font-family: 'Barlow', sans-serif;
+  color: hsl(210, 4%, 67%);
+  font-size: 15px;
+  margin-bottom: 3rem;
+
+}
+
+.hidden {
+  display: none;
+}
+
+/* top */
+
+#header {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/assets/image/mobile/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 1rem;
+}
+
+
+.content-header {
+  max-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.logo-header {
+  max-width: 100%;
+  height: 100%;
+}
+
+
+/* menu mobile */
+
+#header-nav.active #mobile-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  visibility: visible;
+  height: calc(100vh - 70px);
+  overflow-y: hidden;
+  
+  
+}
+
+#mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  right: 0px;
+  height: 0px;
+  background: hsl(0, 0%, 100%);
+  transition: .6s;
+  visibility: hidden;
+  overflow-y: hidden;
+
+}
+
+#mobile-menu li {
+  padding-bottom: 3rem;
+  
+}
+
+#mobile-menu a  {
+  color: hsl(210, 4%, 67%);
+  font-family: 'Barlow', sans-serif; 
+}
+
+
+#mobile-menu li button {
+  border: none;
+  background: hsl(51, 100%, 49%);
+  max-width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+}
+
+#btn-mobile  {
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+
+
+.indice h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 7rem 0 4rem ;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(0, 0%, 100%);
+}
+
+
+/* mid */
+
+#content-article {
+  display: flex;
+  flex-direction: column;
+}
+
+#transform-brand, 
+#stand-audience{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+#transform-brand {
+  order: 1;
+}
+
+#stand-audience {
+  order: 2;
+}
+
+.introduction {
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3.5rem 3rem;
+  
+}
+
+.introduction p {
+  font-family: 'Barlow', sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+  color: hsl(213, 9%, 39%);
+  margin-bottom: 2rem;
+}
+
+.introduction-link{
+  color: hsl(212, 27%, 19%);
+  align-self: flex-start;
+  text-transform: uppercase;
+  font-size: .8rem;
+  border-bottom: 5px solid hsl(51, 71%, 56%);
+}
+
+.services {
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3.5rem 3rem;
+}
+
+.services p {
+  font-family: 'Barlow', sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+  color: hsl(213, 9%, 39%);
+  margin-bottom: 2rem;
+}
+
+.services-link {
+  color: hsl(212, 27%, 19%);
+  align-self: flex-start;
+  text-transform: uppercase;
+  font-size: .8rem;
+  border-bottom: 5px solid hsl(7, 99%, 70%);
+}
+
+#graphic-design {
+  max-width: 100%;
+  background-image: url(/assets/image/mobile/image-graphic-design.jpg);
+  background-size: cover;
+  padding: 7rem 2rem;
+}
+
+.graphic-design-services {
+  text-align: center;
+  font-size: 17px;
+}
+
+.graphic-design-services h2 {
+  color:  hsl(167, 40%, 24%);
+  margin-top: 20rem;
+}
+
+.graphic-design-services p {
+  font-family: 'Barlow', sans-serif;
+  line-height: 1.5;
+  color:  hsl(167, 40%, 24%);
+}
+
+#photograph {
+  background-image: url(/assets/image/mobile/image-photography.jpg);
+  background-size: cover;
+  padding-top: 25rem;
+}
+
+.photograph-services {
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 17px;
+}
+
+.photograph-services h2 {
+  color: hsl(198, 62%, 26%);
+}
+
+.photograph-services p {
+  font-family: 'Barlow', sans-serif;
+  line-height: 1.5;
+  color:  hsl(198, 62%, 26%);
+}
+
+#client-testimonials {
+  text-align: center;
+  
+}
+
+#client-testimonials h3 {
+  margin: 5rem 0;
+  font-family: 'Fraunces', serif;
+  color: hsl(232, 10%, 55%);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.clients {
+  margin-bottom: 5rem;
+  margin: 0 4.3rem 5rem;
+}
+
+.clients img, span {
+  width: 25%;
+  border-radius: 100%;
+}
+
+.clients p {
+  font-family: 'Barlow', sans-serif;
+  color: hsl(213, 9%, 39%);
+  line-height: 1.5;
+  margin: 2rem 0;
+
+}
+
+/* end */
+
+
+.food-additional-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+.food-additional-images img {
+  width: 50%;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  max-height: 100vh;
+  padding: 5rem 2rem;
+  background-color: hsl(169, 53%, 64%);
+}
+
+.footer-logo {
+  width: 50%;
+  align-self: center;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 4rem 0;
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  color: hsl(198, 62%, 26%);
+  cursor: pointer;
+}
+
+.social-media {
+  display: flex;
+  align-self: center;
+  gap: 20px;
+  margin: 2rem 0 5rem;
+  cursor: pointer;
+}
+
+.attribution{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  color: hsl(198, 62%, 26%);
+}
+
+.attribution span, a {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 1440px) {
+
+  #header {
+    background-image: url(../image/desktop/image-header.jpg);
+  }
+
+
+  .logo-header{
+    width: 15%;
+  }
+
+  .content-header {
+    align-items: center;
+    margin: 0 3rem;
+    
+  }
+
+  .indice h1 {
+    font-size: 4rem;
+    letter-spacing: 1.3rem;
+    margin-top: 10rem;
+  }
+
+  #header-nav.active #mobile-menu, 
+  #btn-mobile  {
+    display: none;
+  }
+
+  
+  #desktop-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  #desktop-menu a {
+    font-family: 'Barlow', sans-serif; 
+  }
+
+  #desktop-menu li button {
+    border: none;
+    background: hsl(0, 0%, 100%);
+    max-width: 100%;
+    padding: 1rem 1.7rem;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  #desktop-menu button:hover {
+   background: rgba(255, 255, 255, 0.3);
+   color: white;
+
+  }
+
+  /* mid */
+
+  #transform-brand{
+    order: 1;
+  
+  }
+
+  #stand-audience {
+    order: 2;
+
+  }
+
+  #transform-brand img {
+    width: 100%;
+    height: 50%;
+  }
+
+  #stand-audience img {
+    height: 50%;
+  }
+
+  .introduction,
+  .services {
+    height: 100%;
+    padding: 10rem 8rem;
+    text-align: left;
+  }
+
+  .introduction h2 {
+    padding-right: 6.2rem;
+    text-align: left;
+  }
+
+
+  #content-article {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 30% 30;
+  
+    
+  } 
+
+  #transform-brand {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #teste {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90%;
+    
+  }
+
+  #graphic-design {
+    background-image: url(/assets/image/desktop/image-graphic-design.jpg);
+  }
+
+  .graphic-design-services p {
+    padding: 0 5rem;
+    font-size: 1.5rem;
+  }
+
+  #photograph {
+    background-image: url(/assets/image/desktop/image-photography.jpg);
+    background-position: top;
+    
+    
+  }
+
+  .photograph-services p {
+    padding: 0 5rem;
+    align-self: center;
+    font-size: 1.5rem;
+  }
+
+
+  .content-clients {
+    display: flex;
+  }
+
+  /* end */
+
+  .food-additional-images {
+    flex-wrap: nowrap;
+    
+  }
+
+  .food-additional-images img {
+    width: 25%;
+  }
+
+  .footer-logo {
+    width: 15%;
+  }
+
+}
