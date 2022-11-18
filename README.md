@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto 
 
-Este projeto é uma landing page mobile mobile first criada para praticar conceitos como: flexbox, css grid e manipulação da DOM.
+Este projeto é uma landing page desenvolvida em mobile first criada para praticar conceitos como: flexbox, css grid e manipulação da DOM.
 
 ## 🔖 Layout
 
